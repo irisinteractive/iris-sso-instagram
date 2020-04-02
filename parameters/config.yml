@@ -1,0 +1,16 @@
+plugin_name: &plug_name iris-sso-instagram
+IRIS_SSO_INSTAGRAM_DOMAIN: *plug_name
+IRIS_SSO_INSTAGRAM_PATH: !concat [!php/const:WP_PLUGIN_DIR, "/", *plug_name]
+IRIS_SSO_INSTAGRAM_URL: !concat [!php/const:WP_PLUGIN_URL, "/", *plug_name]
+IRIS_SSO_INSTAGRAM_TEMPLATE_PATH: !concat [!php/const:WP_PLUGIN_DIR, "/", *plug_name]
+IRIS_SSO_INSTAGRAM_CLIENT_ID: 'iris_sso_instagram_client_id'
+IRIS_SSO_INSTAGRAM_CLIENT_SECRET: 'iris_sso_instagram_client_secret'
+IRIS_SSO_INSTAGRAM_CODE: 'iris_sso_instagram_code'
+IRIS_SSO_INSTAGRAM_TOKEN: 'iris_sso_instagram_token'
+IRIS_SSO_INSTAGRAM_LISTS_TABLE:
+    SOCIAL_WALL:
+        FIELDS:
+            ID: 'Identifier'
+            title: 'Title'
+            shortcode: 'Shortcode'
+            action: 'Action'

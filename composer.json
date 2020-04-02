@@ -1,0 +1,28 @@
+{
+    "name": "iris/irisssoinstagram",
+    "description": "Get token and refresh long live token for instagram API",
+    "type": "wordpress-plugin",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "IRIS Interactive",
+            "email": "dev@iris-interactive.fr"
+        }
+    ],
+    "config": {
+    	"vendor-dir": "composer_vendor"
+	},
+    "autoload": {
+        "psr-4": {
+            "IrisSsoInstagram\\admin\\": "admin/",
+            "IrisSsoInstagram\\shared\\": "shared/",
+            "IrisSsoInstagram\\includes\\": "includes/"
+    	}
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/var-dumper": "^3.1",
+        "symfony/yaml": "^3.3",
+        "guzzlehttp/guzzle": "^6.5"
+    }
+}

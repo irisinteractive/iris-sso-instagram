@@ -1,0 +1,55 @@
+$icon-family: 'theme-font';
+
+// Fonts file
+@font-face {
+    font-family: $icon-family;
+    font-weight: normal;
+    font-style: normal;
+    src: url("~pluginfont/svgfont/theme-font.eot"),
+    url("~pluginfont/svgfont/theme-font.woff") format("woff"),
+    url("~pluginfont/svgfont/theme-font.ttf") format("truetype"),
+    url("~pluginfont/svgfont/theme-font.eot?#iefix") format("embedded-opentype"),
+    url("~pluginfont/svgfont/theme-font.svg#theme-font") format("svg");
+
+}
+
+// Array fonts to mixin
+$icons: 
+	(
+		"arrow-bottom": "\ea01",
+		"arrow-left": "\ea02",
+		"arrow-right": "\ea03",
+		"arrow-top": "\ea04",
+		"close": "\ea05",
+		"contact": "\ea06",
+		"fi_carte-bleue": "\ea07",
+		"fi_cheques-bancaires-et-postaux": "\ea08",
+		"fi_cheques-vacances": "\ea09",
+		"fi_especes": "\ea0a",
+		"fi_filters": "\ea0b",
+		"fi_modelist": "\ea0c",
+		"fi_modemap": "\ea0d",
+		"fi_modemixted": "\ea0e",
+		"fi_open": "\ea0f",
+		"fi_paypal": "\ea10",
+		"fi_tickets-restaurants": "\ea11",
+		"fi_virements": "\ea12",
+		"fi_visa": "\ea13",
+		"fi_website": "\ea14",
+		"mail": "\ea15",
+		"phone": "\ea16",
+		"search": "\ea17"
+	)
+;
+
+// Fonts class
+.fi:before {
+    font-family: $icon-family;
+    font-style: initial;
+}
+
+@each $name, $icon in $icons {
+    .fi-#{$name}:before {
+        content: $icon;
+    }
+}

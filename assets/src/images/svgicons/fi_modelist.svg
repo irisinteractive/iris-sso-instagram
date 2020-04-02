@@ -1,0 +1,14 @@
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <title>fi_list</title>
+  <g>
+    <rect width="29.25" height="29.25" fill="#1a171b"/>
+    <rect x="35.38" width="29.25" height="29.25" fill="#1a171b"/>
+    <rect x="70.75" width="29.25" height="29.25" fill="#1a171b"/>
+    <rect y="35.38" width="29.25" height="29.25" fill="#1a171b"/>
+    <rect x="35.38" y="35.38" width="29.25" height="29.25" fill="#1a171b"/>
+    <rect x="70.75" y="35.38" width="29.25" height="29.25" fill="#1a171b"/>
+    <rect y="70.75" width="29.25" height="29.25" fill="#1a171b"/>
+    <rect x="35.38" y="70.75" width="29.25" height="29.25" fill="#1a171b"/>
+    <rect x="70.75" y="70.75" width="29.25" height="29.25" fill="#1a171b"/>
+  </g>
+</svg>
