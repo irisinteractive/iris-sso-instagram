@@ -20,7 +20,6 @@ IRIS SSO Instagram is a WordPress plugin who allow to get a valid long token for
 - **[Getting started](#getting-started)** 
 - **[Usage](#usage)** 
 - **[Settings](#settings)** 
-- **[Settings](#settings)** 
 - **[Author](#author)** 
 - **[Contributing](#-contributing)** 
 - **[Show your support](#show-your-support)** 
