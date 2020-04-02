@@ -1,1 +1,5 @@
+title: IRIS SSO Instagram
+description: This wordpress plugin will allow you to generate a valid identification token for querying Instagram APIs.
+show_downloads: true
+google_analytics:
 theme: jekyll-theme-cayman
