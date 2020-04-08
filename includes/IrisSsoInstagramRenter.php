@@ -19,6 +19,7 @@ namespace IrisSsoInstagram\includes;
 use IrisSsoInstagram\admin\IrisSsoInstagramAdmin;
 use IrisSsoInstagram\admin\IrisSsoInstagramAdminMenu;
 use IrisSsoInstagram\admin\IrisSsoInstagramApi;
+use IrisSsoInstagram\shared\IrisSsoInstagramPostType;
 use IrisSsoInstagram\shared\IrisSsoInstagramShared;
 
 /**
@@ -79,8 +80,10 @@ class IrisSsoInstagramRenter
     {
         $plugin_shared = new IrisSsoInstagramShared( $this->get_plugin_name(), $this->get_version() );
         $plugin_api = new IrisSsoInstagramApi();
+	    $plugin_post_type = new IrisSsoInstagramPostType();
 
 	    $this->loader->add_action( 'rest_api_init', $plugin_api, 'init_endpoint' );
+	    $this->loader->add_action( 'init', $plugin_post_type, 'init_custom_post_type' );
 /*        $this->loader->add_action( 'wp_enqueue_scripts', $plugin_shared, 'enqueue_styles' );
         $this->loader->add_action( 'wp_enqueue_scripts', $plugin_shared, 'enqueue_scripts' );*/
     }

@@ -7,6 +7,27 @@ IRIS_SSO_INSTAGRAM_CLIENT_ID: 'iris_sso_instagram_client_id'
 IRIS_SSO_INSTAGRAM_CLIENT_SECRET: 'iris_sso_instagram_client_secret'
 IRIS_SSO_INSTAGRAM_CODE: 'iris_sso_instagram_code'
 IRIS_SSO_INSTAGRAM_TOKEN: 'iris_sso_instagram_token'
+
+IRIS_SSO_INSTAGRAM_POST_TYPE:
+    INSTA_WALL:
+        SLUG: 'instagram-wall'
+        NAME: 'Instagram walls'
+        SINGULAR_NAME: 'Instagram wall'
+        PARAMS:
+            show_in_rest: true
+            parent_item_colon: ''
+            publicly_queryable: true
+            public: true
+            show_ui: true
+            show_in_menu: 'iris-sso-instagram'
+            query_var: false
+            exclude_from_search: true
+            capability_type: 'post'
+            menu_position: 0
+            has_archive: true
+            supports:
+                - 'title'
+
 IRIS_SSO_INSTAGRAM_LISTS_TABLE:
     SOCIAL_WALL:
         FIELDS:
