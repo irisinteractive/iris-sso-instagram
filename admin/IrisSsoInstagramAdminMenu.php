@@ -52,15 +52,6 @@ class IrisSsoInstagramAdminMenu
 			[$this, 'render_iris_sso_instagram_settings_page'],
 			0
 		);
-		add_submenu_page(
-			'iris-sso-instagram',
-			'Social wall',
-			'Social wall',
-			'administrator',
-			'iris-sso-instagram-social-wall',
-			[$this, 'render_iris_sso_instagram_social_walls_page'],
-			1
-		);
 		remove_submenu_page(
 			'iris-sso-instagram',
 			'iris-sso-instagram'
